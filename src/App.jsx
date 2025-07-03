@@ -28,7 +28,7 @@ const App = () => {
                   </label>
                 </div>
                 <div className="flex-1 px-2 mx-2">
-                   <h3 className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</h3>
+                  <h3 className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</h3>
                 </div>
                 <div className="flex-none">
                   <ul className="menu menu-horizontal flex gap-3">
@@ -47,6 +47,26 @@ const App = () => {
               <label htmlFor="dashboard-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
               <ul className="min-h-full p-4 menu bg-base-200 w-60 md:w-80">
                 {/* Sidebar content here */}
+                <div className="collapse collapse-plus bg-base-100 border border-base-300">
+                  <input type="radio" name="my-accordion-3" />
+                  <div className="collapse-title font-semibold">Student</div>
+                  <div className="collapse-content text-sm">Student items will here</div>
+                </div>
+                <div className="collapse collapse-plus bg-base-100 border border-base-300">
+                  <input type="radio" name="my-accordion-3" />
+                  <div className="collapse-title font-semibold">Accommodation</div>
+                  <div className="collapse-content text-sm">Accommodation items will here</div>
+                </div>
+                <div className="collapse collapse-plus bg-base-100 border border-base-300">
+                  <input type="radio" name="my-accordion-3" />
+                  <div className="collapse-title font-semibold">Food</div>
+                  <div className="collapse-content text-sm">Food items will here</div>
+                </div>
+                <div className="collapse collapse-plus bg-base-100 border border-base-300">
+                  <input type="radio" name="my-accordion-3" />
+                  <div className="collapse-title font-semibold">Stock</div>
+                  <div className="collapse-content text-sm">Stock items will here</div>
+                </div>
               </ul>
             </div>
           </div>
