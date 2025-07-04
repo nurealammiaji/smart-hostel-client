@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router'
 import './App.css'
-import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiMoneyWavyBold, PiStudentBold, PiUserCircleGearBold, PiUserSquareBold } from "react-icons/pi";
+import MenuAccordion from './components/MenuAccordion/MenuAccordion';
 
 const App = () => {
 
@@ -48,46 +48,7 @@ const App = () => {
               <label htmlFor="dashboard-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
               <ul className="min-h-full p-4 menu bg-base-200 w-60 md:w-80">
                 {/* Sidebar content here */}
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-success'><PiStudentBold /></span> Student Management</div>
-                  <div className="collapse-content text-sm">Student items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-primary'><PiChartLineBold /></span> Stock Management</div>
-                  <div className="collapse-content text-sm">Stock items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-warning'><PiBowlSteamBold /></span> Food Management</div>
-                  <div className="collapse-content text-sm">Food items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-info'><PiBedBold /></span> Seat Management</div>
-                  <div className="collapse-content text-sm">Seat items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-lime-500'><PiMoneyWavyBold /></span> Fees & Payments</div>
-                  <div className="collapse-content text-sm">Fees items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-error'><PiChatTextBold /></span> Complaints</div>
-                  <div className="collapse-content text-sm">Complaint items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-yellow-300'><PiBellRingingBold /></span> Notices</div>
-                  <div className="collapse-content text-sm">Notice items will here</div>
-                </div>
-                <div className="collapse collapse-plus bg-base-100 border border-base-300">
-                  <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title font-semibold flex gap-4"><span className='text-2xl text-orange-500'><PiUserSquareBold /></span> Profile</div>
-                  <div className="collapse-content text-sm">Profile items will here</div>
-                </div>
+                <MenuAccordion />
               </ul>
             </div>
           </div>
