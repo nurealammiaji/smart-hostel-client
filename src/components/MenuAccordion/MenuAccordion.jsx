@@ -11,11 +11,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/students/add"}>
                                 <span className='text-xl'>
                                     <PiIntersectBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>

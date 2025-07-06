@@ -10,6 +10,7 @@ import Fees from '../pages/Fees/Fees';
 import Complaints from '../pages/Complaints/Complaints';
 import Notices from '../pages/Notices/Notices';
 import Profile from './../pages/Profile/Profile';
+import AddStudent from '../pages/Students/AddStudent/AddStudent';
 
 const AllRoutes = createBrowserRouter([
     {
@@ -22,7 +23,13 @@ const AllRoutes = createBrowserRouter([
             },
             {
                 path: "/students",
-                element: <Students />
+                element: <Students />,
+                children: [
+                    {
+                        path: "/students/add",
+                        element: <AddStudent />
+                    }
+                ]
             },
             {
                 path: "/stocks",
