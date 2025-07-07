@@ -1,8 +1,11 @@
 import React from 'react'
+import { Outlet } from 'react-router'
 
 const Stocks = () => {
   return (
-    <div>Stocks</div>
+    <div>
+      <Outlet />
+    </div>
   )
 }
 

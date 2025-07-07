@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router'
+import { Link, Outlet } from 'react-router'
 import './App.css'
 import MenuAccordion from './components/MenuAccordion/MenuAccordion';
 
@@ -29,7 +29,7 @@ const App = () => {
                   </label>
                 </div>
                 <div className="flex-1 px-2 mx-2">
-                  <h3 className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</h3>
+                  <Link to={"/"} className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</Link>
                 </div>
                 <div className="flex-none">
                   <ul className="menu menu-horizontal flex gap-3">

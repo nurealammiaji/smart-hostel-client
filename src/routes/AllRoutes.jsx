@@ -11,6 +11,12 @@ import Complaints from '../pages/Complaints/Complaints';
 import Notices from '../pages/Notices/Notices';
 import Profile from './../pages/Profile/Profile';
 import AddStudent from '../pages/Students/AddStudent/AddStudent';
+import AddStock from '../pages/Stocks/AddStock/AddStock';
+import AddFood from './../pages/Foods/AddFood/AddFood';
+import AddSeat from './../pages/Seats/AddSeat/AddSeat';
+import AddComplaint from '../pages/Complaints/AddComplaint/AddComplaint';
+import AddNotice from './../pages/Notices/AddNotice/AddNotice';
+import EditProfile from '../pages/Profile/EditProfile/EditProfile';
 
 const AllRoutes = createBrowserRouter([
     {
@@ -33,15 +39,33 @@ const AllRoutes = createBrowserRouter([
             },
             {
                 path: "/stocks",
-                element: <Stocks />
+                element: <Stocks />,
+                children: [
+                    {
+                        path: "/stocks/add",
+                        element: <AddStock />
+                    }
+                ]
             },
             {
                 path: "/foods",
-                element: <Foods />
+                element: <Foods />,
+                children: [
+                    {
+                        path: "/foods/add",
+                        element: <AddFood />
+                    }
+                ]
             },
             {
                 path: "/seats",
-                element: <Seats />
+                element: <Seats />,
+                children: [
+                    {
+                        path: "/seats/add",
+                        element: <AddSeat />
+                    }
+                ]
             },
             {
                 path: "/fees",
@@ -49,15 +73,33 @@ const AllRoutes = createBrowserRouter([
             },
             {
                 path: "/complaints",
-                element: <Complaints />
+                element: <Complaints />,
+                children: [
+                    {
+                        path: "/complaints/add",
+                        element: <AddComplaint />
+                    }
+                ]
             },
             {
                 path: "/notices",
-                element: <Notices />
+                element: <Notices />,
+                children: [
+                    {
+                        path: "/notices/add",
+                        element: <AddNotice />
+                    }
+                ]
             },
             {
                 path: "/profile",
-                element: <Profile />
+                element: <Profile />,
+                children: [
+                    {
+                        path: "/profile/edit",
+                        element: <EditProfile />
+                    }
+                ]
             }
         ]
     }

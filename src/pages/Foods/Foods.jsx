@@ -1,8 +1,11 @@
 import React from 'react'
+import { Outlet } from 'react-router'
 
 const Foods = () => {
   return (
-    <div>Foods</div>
+    <div>
+      <Outlet />
+    </div>
   )
 }
 
