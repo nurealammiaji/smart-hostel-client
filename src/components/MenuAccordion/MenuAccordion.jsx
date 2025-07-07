@@ -1,5 +1,5 @@
 import React from 'react';
-import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiIntersectBold, PiMoneyWavyBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
+import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiIntersectBold, PiMoneyWavyBold, PiPenBold, PiPlusCircleBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
 import { Link } from 'react-router';
 
 const MenuAccordion = () => {
@@ -75,11 +75,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/foods/add"}>
                                 <span className='text-xl'>
                                     <PiIntersectBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>
@@ -107,11 +107,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/seats/add"}>
                                 <span className='text-xl'>
                                     <PiIntersectBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>
@@ -139,11 +139,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/payments/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>
@@ -171,11 +171,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/complaints/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>
@@ -203,11 +203,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/notices/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                   <PiPlusCircleBold />
                                 </span>
-                                Item 1
+                                Add
                             </Link>
                         </li>
                         <li>
@@ -235,11 +235,11 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/profile/edit"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                  <PiPenBold />
                                 </span>
-                                Item 1
+                               Edit
                             </Link>
                         </li>
                         <li>

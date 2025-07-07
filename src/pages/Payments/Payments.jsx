@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 
-const Fees = () => {
+const Payments = () => {
   return (
     <div>
       <Outlet />
@@ -9,4 +9,4 @@ const Fees = () => {
   )
 }
 
-export default Fees
+export default Payments

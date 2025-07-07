@@ -6,7 +6,7 @@ import Students from '../pages/Students/Students';
 import Stocks from '../pages/Stocks/Stocks';
 import Foods from '../pages/Foods/Foods';
 import Seats from '../pages/Seats/Seats';
-import Fees from '../pages/Fees/Fees';
+import Payments from '../pages/Payments/Payments';
 import Complaints from '../pages/Complaints/Complaints';
 import Notices from '../pages/Notices/Notices';
 import Profile from './../pages/Profile/Profile';
@@ -17,6 +17,7 @@ import AddSeat from './../pages/Seats/AddSeat/AddSeat';
 import AddComplaint from '../pages/Complaints/AddComplaint/AddComplaint';
 import AddNotice from './../pages/Notices/AddNotice/AddNotice';
 import EditProfile from '../pages/Profile/EditProfile/EditProfile';
+import AddPayment from './../pages/Payments/AddPayment/AddPayment';
 
 const AllRoutes = createBrowserRouter([
     {
@@ -68,8 +69,14 @@ const AllRoutes = createBrowserRouter([
                 ]
             },
             {
-                path: "/fees",
-                element: <Fees />
+                path: "/payments",
+                element: <Payments />,
+                children: [
+                {
+                    path: "/payments/add",
+                    element: <AddPayment />
+                }
+                ]
             },
             {
                 path: "/complaints",
