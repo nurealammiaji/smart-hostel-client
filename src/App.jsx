@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router'
 import './App.css'
 import MenuAccordion from './components/MenuAccordion/MenuAccordion';
-import { PiCopyrightBold, PiHouseLineBold } from 'react-icons/pi';
+import { PiCopyrightBold, PiHouseLineBold, PiHouseLineDuotone } from 'react-icons/pi';
 
 const App = () => {
 
@@ -41,22 +41,24 @@ const App = () => {
                   <Link to={"/"} className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</Link>
                 </div>
                 <div className="flex-none">
-                  <div className="menu menu-horizontal flex items-center gap-5">
+                  <div className="menu menu-horizontal flex items-center gap-3">
                     {/* Navbar menu content here */}
-                    <Link to={"/"} className="tooltip" data-tip="Home"><PiHouseLineBold className='text-primary text-3xl' /></Link>
+                    <Link to={"/"} className="tooltip" data-tip="Home">
+                      {/* <PiHouseLineBold className='text-primary text-3xl' /> */}
+                      <PiHouseLineDuotone className='text-3xl font-bold text-success' />
+                    </Link>
                     {
                       (user) &&
                       <div className="tooltip" data-tip="Profile">
                         {/* change popover-1 and --anchor-1 names. Use unique names for each dropdown */}
-                        {/* For TSX uncomment the commented types below */}
                         <button className="btn btn-circle" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
                           <div className="avatar avatar-online p-1">
-                            <div className="ring-primary ring-offset-base-100 w-6 rounded-full ring-2 ring-offset-2">
+                            <div className="ring-success ring-offset-base-100 w-5 rounded-full ring-2 ring-offset-2">
                               <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
                             </div>
                           </div>
                         </button>
-                        <ul className="dropdown menu bg-base-200 rounded-box" popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
+                        <ul className="dropdown border border-success menu bg-base-200 rounded-box" popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
                           <li><Link to={"/profile/edit"}>Edit</Link></li>
                           <li><Link to={"/profile/view"}>View</Link></li>
                           <li><button>Logout</button></li>
@@ -77,7 +79,7 @@ const App = () => {
                 {/* Sidebar content here */}
                 <MenuAccordion />
                 <div className="mt-10">
-                  <small className='flex justify-center items-center gap-1'><span><PiCopyrightBold /></span><a href="https://facebook.com/nurealammiaji" target="_blank" rel="noopener noreferrer" className='text-success font-semibold'>Nure Alam Miaji.</a> All rights reserved.</small>
+                  <small className='flex justify-center items-center gap-1'><span><PiCopyrightBold /></span><a href="https://facebook.com/nurealammiaji" target="_blank" rel="noopener noreferrer" className='text-success font-bold'>Nure Alam Miaji.</a> All rights reserved. </small>
                 </div>
               </ul>
             </div>
