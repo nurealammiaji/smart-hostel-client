@@ -1,13 +1,22 @@
 import { Link, Outlet } from 'react-router'
 import './App.css'
 import MenuAccordion from './components/MenuAccordion/MenuAccordion';
+import { PiCopyrightBold, PiHouseLineBold } from 'react-icons/pi';
 
 const App = () => {
+
+  const user = {
+    name: "Abdullah",
+    role: "admin",
+    status: "active",
+    image: ""
+  };
 
   return (
     <>
       <div>
         <div>
+          {/* Nav + Sidebar */}
           <div className="relative drawer lg:drawer-open">
             <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
             <div className="flex flex-col drawer-content">
@@ -32,11 +41,29 @@ const App = () => {
                   <Link to={"/"} className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</Link>
                 </div>
                 <div className="flex-none">
-                  <ul className="menu menu-horizontal flex gap-3">
+                  <div className="menu menu-horizontal flex items-center gap-5">
                     {/* Navbar menu content here */}
-                    <li className='btn btn-sm'>Link-1</li>
-                    <li className='btn btn-sm'>Link-2</li>
-                  </ul>
+                    <Link to={"/"} className="tooltip" data-tip="Home"><PiHouseLineBold className='text-primary text-3xl' /></Link>
+                    {
+                      (user) &&
+                      <div className="tooltip" data-tip="Profile">
+                        {/* change popover-1 and --anchor-1 names. Use unique names for each dropdown */}
+                        {/* For TSX uncomment the commented types below */}
+                        <button className="btn btn-circle" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
+                          <div className="avatar avatar-online p-1">
+                            <div className="ring-primary ring-offset-base-100 w-6 rounded-full ring-2 ring-offset-2">
+                              <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+                            </div>
+                          </div>
+                        </button>
+                        <ul className="dropdown menu bg-base-200 rounded-box" popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
+                          <li><Link to={"/profile/edit"}>Edit</Link></li>
+                          <li><Link to={"/profile/view"}>View</Link></li>
+                          <li><button>Logout</button></li>
+                        </ul>
+                      </div>
+                    }
+                  </div>
                 </div>
               </div>
               {/* Page content here */}
@@ -49,6 +76,9 @@ const App = () => {
               <ul className="min-h-full p-4 menu bg-base-200 w-60 md:w-80">
                 {/* Sidebar content here */}
                 <MenuAccordion />
+                <div className="mt-10">
+                  <small className='flex justify-center items-center gap-1'><span><PiCopyrightBold /></span><a href="https://facebook.com/nurealammiaji" target="_blank" rel="noopener noreferrer" className='text-success font-semibold'>Nure Alam Miaji.</a> All rights reserved.</small>
+                </div>
               </ul>
             </div>
           </div>

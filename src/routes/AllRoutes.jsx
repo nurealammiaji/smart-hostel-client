@@ -18,6 +18,7 @@ import AddComplaint from '../pages/Complaints/AddComplaint/AddComplaint';
 import AddNotice from './../pages/Notices/AddNotice/AddNotice';
 import EditProfile from '../pages/Profile/EditProfile/EditProfile';
 import AddPayment from './../pages/Payments/AddPayment/AddPayment';
+import ViewProfile from './../pages/Profile/ViewProfile/ViewProfile';
 
 const AllRoutes = createBrowserRouter([
     {
@@ -102,6 +103,10 @@ const AllRoutes = createBrowserRouter([
                 path: "/profile",
                 element: <Profile />,
                 children: [
+                    {
+                        path: "/profile/view",
+                        element: <ViewProfile />
+                    },
                     {
                         path: "/profile/edit",
                         element: <EditProfile />

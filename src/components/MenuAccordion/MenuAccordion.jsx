@@ -1,5 +1,5 @@
 import React from 'react';
-import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiIntersectBold, PiMoneyWavyBold, PiPenBold, PiPlusCircleBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
+import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiEyeBold, PiIntersectBold, PiMoneyWavyBold, PiPenBold, PiPlusCircleBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
 import { Link } from 'react-router';
 
 const MenuAccordion = () => {
@@ -13,7 +13,7 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/students/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
                                 Add
                             </Link>
@@ -45,7 +45,7 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/stocks/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
                                 Add
                             </Link>
@@ -77,7 +77,7 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/foods/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
                                 Add
                             </Link>
@@ -109,7 +109,7 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/seats/add"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPlusCircleBold />
                                 </span>
                                 Add
                             </Link>
@@ -205,7 +205,7 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/notices/add"}>
                                 <span className='text-xl'>
-                                   <PiPlusCircleBold />
+                                    <PiPlusCircleBold />
                                 </span>
                                 Add
                             </Link>
@@ -235,19 +235,19 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full">
                         <li>
-                            <Link to={"/profile/edit"}>
+                            <Link to={"/profile/view"}>
                                 <span className='text-xl'>
-                                  <PiPenBold />
+                                    <PiEyeBold />
                                 </span>
-                               Edit
+                                View
                             </Link>
                         </li>
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/profile/edit"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiPenBold />
                                 </span>
-                                Item 2
+                                Edit
                             </Link>
                         </li>
                         <li>
