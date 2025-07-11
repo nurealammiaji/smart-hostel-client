@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router'
 import './App.css'
 import MenuAccordion from './components/MenuAccordion/MenuAccordion';
-import { PiCopyrightBold, PiHouseLineBold, PiHouseLineDuotone } from 'react-icons/pi';
+import { PiCopyrightBold, PiHouseLineDuotone, PiMagnifyingGlassDuotone } from 'react-icons/pi';
 
 const App = () => {
 
@@ -41,11 +41,14 @@ const App = () => {
                   <Link to={"/"} className='md:text-2xl md:font-bold font-semibold'>Smart Hostel</Link>
                 </div>
                 <div className="flex-none">
-                  <div className="menu menu-horizontal flex items-center gap-3">
+                  <div className="menu menu-horizontal flex items-center gap-4">
                     {/* Navbar menu content here */}
                     <Link to={"/"} className="tooltip" data-tip="Home">
                       {/* <PiHouseLineBold className='text-primary text-3xl' /> */}
                       <PiHouseLineDuotone className='text-3xl font-bold text-success' />
+                    </Link>
+                    <Link to={"/search"} className='tooltip' data-tip="Search">
+                      <PiMagnifyingGlassDuotone className='text-3xl font-bold text-success' />
                     </Link>
                     {
                       (user) &&

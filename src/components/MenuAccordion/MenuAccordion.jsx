@@ -1,5 +1,5 @@
 import React from 'react';
-import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiEyeBold, PiIntersectBold, PiMoneyWavyBold, PiPenBold, PiPlusCircleBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
+import { PiBedBold, PiBellRingingBold, PiBowlSteamBold, PiChartLineBold, PiChatTextBold, PiEyeBold, PiListBulletsBold, PiMagnifyingGlassBold, PiMoneyWavyBold, PiPenBold, PiPlusCircleBold, PiSignOutBold, PiStudentBold, PiUserSquareBold } from "react-icons/pi";
 import { Link } from 'react-router';
 
 const MenuAccordion = () => {
@@ -21,17 +21,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -53,17 +53,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -85,17 +85,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -117,17 +117,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -149,17 +149,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -181,17 +181,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -213,17 +213,17 @@ const MenuAccordion = () => {
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiMagnifyingGlassBold />
                                 </span>
-                                Item 2
+                                Search
                             </Link>
                         </li>
                         <li>
                             <Link to={"/"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiListBulletsBold />
                                 </span>
-                                Item 3
+                                View All
                             </Link>
                         </li>
                     </ul>
@@ -235,14 +235,6 @@ const MenuAccordion = () => {
                 <div className="collapse-content text-sm">
                     <ul className="menu bg-base-200 rounded-box w-full border border-orange-500">
                         <li>
-                            <Link to={"/profile/view"}>
-                                <span className='text-xl'>
-                                    <PiEyeBold />
-                                </span>
-                                View
-                            </Link>
-                        </li>
-                        <li>
                             <Link to={"/profile/edit"}>
                                 <span className='text-xl'>
                                     <PiPenBold />
@@ -251,12 +243,20 @@ const MenuAccordion = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/profile/view"}>
                                 <span className='text-xl'>
-                                    <PiIntersectBold />
+                                    <PiEyeBold />
                                 </span>
-                                Item 3
+                                View
                             </Link>
+                        </li>
+                        <li>
+                            <button>
+                                <span className='text-xl'>
+                                    <PiSignOutBold />
+                                </span>
+                                Logout
+                            </button>
                         </li>
                     </ul>
                 </div>
