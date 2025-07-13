@@ -43,16 +43,16 @@ const App = () => {
                 <div className="flex-none">
                   <div className="menu menu-horizontal flex items-center gap-4">
                     {/* Navbar menu content here */}
-                    <Link to={"/"} className="tooltip" data-tip="Home">
+                    <Link to={"/"} className="tooltip tooltip-bottom" data-tip="Home">
                       {/* <PiHouseLineBold className='text-primary text-3xl' /> */}
                       <PiHouseLineDuotone className='text-3xl font-bold text-success' />
                     </Link>
-                    <Link to={"/search"} className='tooltip' data-tip="Search">
+                    <Link to={"/search"} className='tooltip tooltip-bottom' data-tip="Search">
                       <PiMagnifyingGlassDuotone className='text-3xl font-bold text-success' />
                     </Link>
                     {
                       (user) &&
-                      <div className="tooltip" data-tip="Profile">
+                      <div className="tooltip tooltip-bottom" data-tip="Profile">
                         {/* change popover-1 and --anchor-1 names. Use unique names for each dropdown */}
                         <button className="btn btn-circle" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
                           <div className="avatar avatar-online p-1">
@@ -61,7 +61,7 @@ const App = () => {
                             </div>
                           </div>
                         </button>
-                        <ul className="dropdown border border-success menu bg-base-200 rounded-box" popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
+                        <ul className="dropdown dropdown-end menu bg-base-200 border border-success rounded-box" popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
                           <li><Link to={"/profile/edit"}>Edit</Link></li>
                           <li><Link to={"/profile/view"}>View</Link></li>
                           <li><button>Logout</button></li>
