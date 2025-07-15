@@ -20,6 +20,8 @@ import AddNotice from './../pages/Notices/AddNotice/AddNotice';
 import EditProfile from '../pages/Profile/EditProfile/EditProfile';
 import AddPayment from './../pages/Payments/AddPayment/AddPayment';
 import ViewProfile from './../pages/Profile/ViewProfile/ViewProfile';
+import SearchStudent from '../pages/Students/SearchStudent/SearchStudent';
+import AllStudents from '../pages/Students/AllStudents/AllStudents';
 
 const AllRoutes = createBrowserRouter([
     {
@@ -41,6 +43,14 @@ const AllRoutes = createBrowserRouter([
                     {
                         path: "/students/add",
                         element: <AddStudent />
+                    },
+                    {
+                        path: "/students/search",
+                        element: <SearchStudent />
+                    },
+                    {
+                        path: "/students/all",
+                        element: <AllStudents />
                     }
                 ]
             },
