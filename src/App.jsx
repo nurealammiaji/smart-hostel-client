@@ -80,9 +80,13 @@ const App = () => {
               <label htmlFor="dashboard-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
               <ul className="min-h-full p-4 menu bg-base-200 w-60 md:w-80">
                 {/* Sidebar content here */}
-                <MenuAccordion />
-                <div className="mt-10">
-                  <small className='flex justify-center items-center gap-1'><span><PiCopyrightBold /></span><a href="https://facebook.com/nurealammiaji" target="_blank" rel="noopener noreferrer" className='text-success font-bold'>Nure Alam Miaji.</a> All rights reserved. </small>
+                <div className='flex flex-col justify-between min-h-screen gap-10'>
+                  <div>
+                    <MenuAccordion />
+                  </div>
+                  <div>
+                    <small className='flex justify-center items-center gap-1'><span><PiCopyrightBold /></span><a href="https://facebook.com/nurealammiaji" target="_blank" rel="noopener noreferrer" className='text-success font-bold'>Nure Alam Miaji.</a> All rights reserved. </small>
+                  </div>
                 </div>
               </ul>
             </div>
